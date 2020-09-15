@@ -1,0 +1,162 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1148px;
+  padding: 0 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.sitenav{
+  padding: 50px 0;
+  background-color: #a2d5f2;
+}
+
+.sitenav-content{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: #ffc93c;
+}
+
+.nav__logo-wrapper{
+  width: 200px;
+}
+
+.nav__logo-link{
+  position: absolute;
+  z-index: 1;
+  display: block;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.nav__logo{
+  display: block;
+}
+
+.navbar__list{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: calc(100% - 440px);
+  padding: 0;
+  margin: 0;
+  margin: 0 20px;
+  list-style-type: none;
+}
+
+.navbar__link{
+  display: block;
+  padding: 15px 25px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* background-color: tomato; */
+}
+
+.navbar__link:hover{
+  color:  #ffc93c;
+  background-color: #333;
+}
+
+.navbar__link:active{
+  opacity: 0.5;
+}
+
+.navbar__item-menu{
+  position: relative;
+  z-index: 1;
+}
+
+.navbar__dropdown-list{
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  background-color: #ee6f57;
+  display: none;
+}
+
+.dropdown-link{
+  display: block;
+  padding: 10px 25px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  text-decoration: none;
+}
+
+.dropdown-link:hover{
+  color:  #ffc93c;
+  background-color: #333;
+}
+
+.dropdown-link:active{
+  opacity: 0.7;
+}
+
+.socials{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.sociails__link{
+  display: inline-block;
+  text-decoration: none;
+}
+
+.navbar__item-menu:hover{
+  z-index: 5;
+}
+
+.navbar__item-menu:hover .navbar__dropdown-list{
+  display: flex;
+}
